@@ -41,7 +41,7 @@ metadata:
   name: nginx-internal-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.228.50
+  loadBalancerIP: 10.48.10.111
   ports:
   - protocol: TCP
     port: 80
