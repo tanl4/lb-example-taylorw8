@@ -2,13 +2,13 @@ pipeline {
     agent any 
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'
-        DOCKER_IMAGE = 'cithit/roseaw-metal'
+        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'   //don't change this
+        DOCKER_IMAGE = 'cithit/roseaw-metal'         //do change this
         // Use Jenkins build number as part of the image tag
         IMAGE_TAG = "build-${BUILD_NUMBER}"
-        GITHUB_URL = 'https://github.com/miamioh-roseaw/metal.git'
+        GITHUB_URL = 'https://github.com/miamioh-roseaw/metal.git'  //do change this
         
-        KUBECONFIG = credentials('roseaw-225')
+        KUBECONFIG = credentials('roseaw-225')  //do change this
     }
 
     stages {
