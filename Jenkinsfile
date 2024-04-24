@@ -8,7 +8,7 @@ pipeline {
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/WTaylor8miami/lb-example-taylorw8.git'  //do change this
         
-        KUBECONFIG = credentials('taylorw8-test-credentials')  //do change this
+        KUBECONFIG = credentials('taylorw8-225')  //do change this
     }
 
     stages {
